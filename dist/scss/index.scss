@@ -1,18 +1,20 @@
-@use 'colors/color' as cl;
+@use 'colors/clf' as cl;
+@use 'colors/color' as c;
 
 @use './components/mixin' as m;
 @use './components/select' ;
 @use './components/nav' ;
+@use './components/footer' ;
 
 
 .head {
-    height: 1%;
-    background : cl.$black;
+    height: 4%;
+    background : c.$black;
 
     &__qt {
         padding : 0 0 0 1%;
         font-weight : 900;
-        color : cl.$white;
+        color : c.$white;
     }
 }
 
@@ -29,21 +31,21 @@
         
         font-weight : 900;
         text-shadow : 2px 2px 8.5px #ff0095;
-        color : cl.$hov;
+        color : c.$hov;
     }
 
     &__2:hover {
 
         font-weight : 900;
         text-shadow :2px 2px 8.5px #01eeff;
-        color : cl.$hov;
+        color : c.$hov;
     }
 
     &__3:hover {
 
         font-weight : 900;
         text-shadow : 2px 2px 8.5px #ff0000;
-        color : cl.$hov;
+        color : c.$hov;
     }
 
     & > p {

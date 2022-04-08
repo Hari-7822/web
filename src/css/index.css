@@ -8,23 +8,27 @@
   flex-direction: row;
   align-items: none;
   justify-content: none;
+  gap: 2rem;
 }
 .nav__navbar > li {
   list-style: none;
 }
-.nav__navbar > a {
+.nav__navbar > li > a {
+  color: hsl(120deg, 54%, 21%);
   text-decoration: none;
 }
-
-.footer {
-  background: #313131;
+.nav__navbar > li > a:hover {
+  color: hsl(120deg, 65%, 51%);
 }
+
 .footer__nav {
   display: flex;
   flex-direction: row;
-  align-items: none;
+  align-items: center;
   justify-content: none;
   gap: 1rem;
+  background: #313131;
+  height: 7vh;
 }
 .footer__nav > li {
   list-style: none;
@@ -33,15 +37,24 @@
   text-decoration: none;
   color: #000000;
 }
-.footer__react:hover {
-  color: #61dafb;
-}
 .footer__js:hover {
   color: #fcdc00;
 }
+.footer__react:hover {
+  color: #61dafb;
+}
+.footer__python {
+  color: #008bcd;
+}
+.footer__db:hover {
+  color: #dbdbdb;
+}
+.footer__bye {
+  color: hsl(120deg, 65%, 51%);
+}
 
 .head {
-  height: 1%;
+  height: 4%;
   background: #000000;
 }
 .head__qt {

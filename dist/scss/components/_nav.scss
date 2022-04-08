@@ -1,51 +1,32 @@
 @use 'mixin' as m;
+@use '../colors/clf' as cl;
 @use '../colors/color' as c;
 
 .nav {
 
     &__navbar {
         @include m.flex(row, none, none);
-
-        & > li {
-            list-style : none;
-        }
-
-        & > a {
-            text-decoration : none;
-        }
-    
-    }
-
-}
-
-
-
-
-
-.footer {
-    
-    background : #313131;
-
-    &__nav {
-        @include m.flex(row, none, none);
-        gap : 1rem;
+        gap : 2rem;
 
         & > li {
             list-style : none;
         
+            
             & > a {
+                color : cl.l(dark);
                 text-decoration : none;
-                color : c.$black;
+                
+                &:hover {
+                color : cl.l(regular);
+            }
+
             }
         }
     }
 
-    &__react:hover {
-        color : #61dafb;
-    }
-
-    &__js:hover {
-        color : #fcdc00;
-    }
-
 }
+
+
+
+
+

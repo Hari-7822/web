@@ -1,0 +1,51 @@
+@use './mixin' as m;
+@use '../colors/color' as c;
+@use '../colors/clf' as cl;
+
+
+.footer {
+    
+    
+
+    &__nav {
+        @include m.flex(row, center, none) ;
+        gap : 1rem;
+
+        // position : relative;
+        // top : 0.8rem;
+        
+        background : #313131;
+        height : 7vh;
+
+        & > li {
+            list-style : none;
+        
+            & > a {
+                text-decoration : none;
+                color : c.$black;
+            }
+        }
+    }
+    
+    &__js:hover {
+        color : #fcdc00;
+    }
+    
+    &__react:hover {
+        color : #61dafb;
+    }
+
+    &__python {
+        color : #008bcd;    
+    }
+
+    &__db:hover {
+        color : #dbdbdb;
+    }
+
+    &__bye {
+
+        color : cl.l(regular);
+    }
+
+}
