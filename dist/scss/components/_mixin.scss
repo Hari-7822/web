@@ -1,0 +1,8 @@
+@mixin flex($d : column, $al : center, $jus : center) {
+
+    display : flex;
+    flex-direction : $d;
+    align-items: $al;
+    justify-content : $jus;
+
+}

@@ -1,0 +1,7 @@
+@use '../colors/color' as c;
+
+
+::selection {
+    background : #50ac6b;
+    color : c.$white;
+}

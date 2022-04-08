@@ -1,0 +1,51 @@
+@use 'mixin' as m;
+@use '../colors/color' as c;
+
+.nav {
+
+    &__navbar {
+        @include m.flex(row, none, none);
+
+        & > li {
+            list-style : none;
+        }
+
+        & > a {
+            text-decoration : none;
+        }
+    
+    }
+
+}
+
+
+
+
+
+.footer {
+    
+    background : #313131;
+
+    &__nav {
+        @include m.flex(row, none, none);
+        gap : 1rem;
+
+        & > li {
+            list-style : none;
+        
+            & > a {
+                text-decoration : none;
+                color : c.$black;
+            }
+        }
+    }
+
+    &__react:hover {
+        color : #61dafb;
+    }
+
+    &__js:hover {
+        color : #fcdc00;
+    }
+
+}
