@@ -159,7 +159,7 @@ submit.addEventListener("click", () => {
     const answer = getSelected();
 
     if(answer) {
-        if(answer === quizData[current].correct) score++;
+        if(answer === quizData[current].crt) score++;
         currentQuiz++;
     if(currentQuiz < quizData.length) loadQuiz();
     else {
