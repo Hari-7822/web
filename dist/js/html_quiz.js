@@ -91,23 +91,23 @@ const data = [
     },
 
     {
-        Q : "",
+        Q : "How many version HTML is evolved.",
 
-        a : "",
-        b : "",
-        c : "",
-        d : "",
+        a : "1",
+        b : "2",
+        c : "4",
+        d : "5",
 
-        crt : "",
+        crt : "d",
     },
 
     {
-        Q : "",
+        Q : "what type of Language is HTML",
 
-        a : "",
-        b : "",
-        c : "",
-        d : "",
+        a : "Programming language",
+        b : "markup language",
+        c : "styling language",
+        d : "assembly language",
 
         crt : "",
     },
