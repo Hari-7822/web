@@ -109,7 +109,7 @@ const data = [
         c : "styling language",
         d : "assembly language",
 
-        crt : "",
+        crt : "b",
     },
 
 ];
@@ -160,12 +160,11 @@ submit.addEventListener("click", () => {
 
     if(answer) {
         if(answer === data[current].crt) score++;
-        currentQuiz++;
-    if(currentQuiz < data.length) loadQuiz();
+        current++;
+    if(current < data.length) loadQuiz();
     else {
         quiz.innerHTML  = <><h3>You scored ${score} of ${data.length} questions</h3><button onclick="history.go(0)">Play Again</button></>
 
-        if(score < 1) alert("Hii")
     }
 
     }
