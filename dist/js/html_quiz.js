@@ -144,7 +144,7 @@ const sel = ()=> {
 const loadQuiz =  () => {
     deselectAns();
 
-    const currentQuiz = quizData[current];
+    const currentQuiz = data[current];
     questionElement.innerText = currentQuiz.question;
 
     a.innerText = currentQuiz.a;
@@ -159,11 +159,11 @@ submit.addEventListener("click", () => {
     const answer = getSelected();
 
     if(answer) {
-        if(answer === quizData[current].crt) score++;
+        if(answer === data[current].crt) score++;
         currentQuiz++;
-    if(currentQuiz < quizData.length) loadQuiz();
+    if(currentQuiz < data.length) loadQuiz();
     else {
-        quiz.innerHTML  = <><h3>You scored ${score} of ${quizData.length} questions</h3><button onclick="history.go(0)">Play Again</button></>
+        quiz.innerHTML  = <><h3>You scored ${score} of ${data.length} questions</h3><button onclick="history.go(0)">Play Again</button></>
 
         if(score < 1) alert("Hii")
     }
